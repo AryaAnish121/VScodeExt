@@ -1,6 +1,6 @@
 {
-    "name": "vscodeext",
-    "displayName": "VScodeExt",
+    "name": "vscodeextension",
+    "displayName": "VScodeExtension",
     "description": "A VS code extension that you must have!",
     "version": "1.0.0",
     "icon": "logo.png",
