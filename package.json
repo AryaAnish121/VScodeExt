@@ -4,6 +4,7 @@
     "description": "A VS code extension that you must have!",
     "version": "1.0.0",
     "icon": "logo.png",
+    "publisher": "aryaanish",
     "author": {
         "name": "Arya Anish",
         "email": "aryaanishuser@gmail.com"
