@@ -1,0 +1,40 @@
+{
+    "name": "vscodeext",
+    "displayName": "VScodeExt",
+    "description": "A VS code extension that you must have!",
+    "version": "1.0.0",
+    "icon": "logo.png",
+    "author": {
+        "name": "Arya Anish",
+        "email": "aryaanishuser@gmail.com"
+    },
+    "keywords": [
+        "VScodeExt"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AryaAnish121/VScodeExt.git"
+    },
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "css",
+                "path": "./snippets/css.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/javascript.code-snippets"
+            }
+        ]
+    }
+}
