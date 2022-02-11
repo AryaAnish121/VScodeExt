@@ -1,5 +1,5 @@
 {
-  "CSS code snippet": {
+  "Starter Template": {
     "prefix": "!stcs",
     "body": [
       "*{",
@@ -10,5 +10,14 @@
       "}"
     ],
     "description": "Creates a css starter template"
+  },
+  "Flex center": {
+    "prefix": "center",
+    "body": [
+      "    display: flex;",
+      "    align-items: center;",
+      "    justify-content: center;"
+    ],
+    "description": "Template for flex center"
   }
 }

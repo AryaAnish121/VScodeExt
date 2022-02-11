@@ -30,7 +30,13 @@
   },
   "Error": {
     "prefix": "err",
-    "body": ["if (err) {", "  console.log(err);", "}"]
+    "body": [
+      "if (${1:err}) {",
+      "  console.log(${1:err});",
+      "} else {",
+      "  $0",
+      "}"
+    ]
   },
   "Loop timeout": {
     "prefix": "!ltmjs",
@@ -118,5 +124,36 @@
       "export default ${1:Compmonent};"
     ],
     "description": "Create a app starter template"
+  },
+  "Find for mongoose": {
+    "prefix": "!mgfind",
+    "body": [
+      "    ${1:Collection}.findOne({ $2 }, (${3:err}, ${4:result}) => {",
+      "      if (${3:err}) {",
+      "        console.log(${3:err});",
+      "      } else {",
+      "        if (!${4:result}) {",
+      "          return;",
+      "        }",
+      "        $5",
+      "      }",
+      "    });"
+    ]
+  },
+  "New insert mongoose": {
+    "prefix": "!mginsert",
+    "body": [
+      "      const ${1:name} = new ${2:collection}({",
+      "        ",
+      "      });",
+      "",
+      "      ${1:name}.save((${3:err}) => {",
+      "        if (${3:err}) {",
+      "          console.log(${3:err});",
+      "        } else {",
+      "          ",
+      "        }",
+      "      });"
+    ]
   }
 }
